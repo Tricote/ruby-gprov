@@ -38,7 +38,7 @@ module GProv
 
     def default_headers
       {:headers => {
-        'Authorization' => "GoogleLogin auth=#{@token}",
+        'Authorization' => "Bearer #{@token}",
         'Content-Type'  => 'application/atom+xml',
       }}
     end
